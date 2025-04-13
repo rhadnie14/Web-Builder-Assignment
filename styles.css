@@ -1,0 +1,506 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f0f0f5; /* Soft background for a balanced aesthetic */
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #000000; /* Changed to black */
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Keeps the header on top during scrolling */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #000000; /* Changed to black */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem; /* Spacing between options */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 8px; /* Rounded corners for each option */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #ff9800; /* Highlight effect when hovered */
+    color: black;
+}
+
+/* Hero Section Styles */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+        url('https://assets.onecompiler.app/43ekv4v2u/43ektgee3/hero-brg.jpg') no-repeat center/cover;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 6rem;
+    font-weight: 800;
+    font-family: 'Playfair Display', serif;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.hero-content h2 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+.cta-button {
+    background-color: #ff9800;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Landscape Listing Options Form */
+/* Global Styles */
+body {
+  background-color: #121212;
+  font-family: Arial, sans-serif;
+  color: white;
+  padding: 2rem;
+}
+
+
+/* Form Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222; /* Complementary dark background */
+    color: #fff; /* Default text color for readability */
+}
+
+/* Form Styles */
+form#listing-options {
+    display: grid; /* Switch to grid for precise alignment */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive layout */
+    gap: 1rem; /* Uniform spacing between elements */
+    background-color: rgba(0, 0, 0, 0.9); /* Black background with slight transparency */
+    padding: 2rem; /* Ample padding for a clean look */
+    border-radius: 15px; /* Smooth corners for aesthetic appeal */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Subtle shadow for depth */
+    max-width: 1000px;
+    margin: 2rem auto; /* Center the form */
+}
+
+form#listing-options label {
+    font-size: 0.85rem; /* Uniform label size */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #ffdf80; /* Gold color for consistency */
+}
+
+form#listing-options input,
+form#listing-options select {
+    padding: 10px; /* Comfortable padding */
+    font-size: 0.85rem; /* Uniform input size */
+    border: 1px solid #ff9800; /* Vibrant orange border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #222; /* Input background complements the form */
+    color: #fff; /* White text for readability */
+    box-sizing: border-box; /* Prevent overflow issues */
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+form#listing-options input:focus,
+form#listing-options select:focus {
+    border-color: #ffc266; /* Highlight border */
+    box-shadow: 0 0 5px rgba(255, 194, 102, 0.6); /* Glow effect for focus */
+}
+
+form#listing-options button {
+    grid-column: 1 / -1; /* Makes the button span the entire width */
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px; /* Rounded corners for aesthetics */
+    background-color: #ff9800; /* Vibrant orange button */
+    color: #000; /* Black text for contrast */
+    border: none;
+    margin: 0 auto; /* Centers the button horizontally */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form#listing-options button:hover {
+    background-color: #e57c00; /* Slightly darker hover effect */
+    transform: scale(1.02);
+}
+
+
+
+
+
+
+
+
+
+/* Highlight Section Styles */
+.highlight-section {
+    background: url('highlight.jpg') no-repeat center/cover;
+    padding: 3rem 2rem;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.highlight-section .content-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.highlight-section .section {
+    max-width: 400px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.highlight-section .section img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.highlight-section .section h3 {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+    color: #ff9800;
+    text-align: center;
+}
+
+.highlight-section .section p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* About Section Styles */
+.about {
+    background: url('https://assets.onecompiler.app/43ekv4v2u/43ektgee3/about%20image.jpg') no-repeat center/cover;
+    color: black;
+    font-family: 'Playfair Display', serif;
+    padding: 3rem 2rem;
+    text-align: center;
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.about > * {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: black; /* Subtle background to make the image pop */
+}
+
+.image-section img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a sleek shadow effect */
+    max-width: 100%; /* Ensures responsiveness */
+}
+
+/* Photo Gallery Section Styles */
+
+.photo-gallery {
+    text-align: center;
+    margin: 2rem;
+}
+
+.image-carousel {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#current-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+#current-image.fade-out {
+    opacity: 0;
+}
+
+.large-image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+.large-image {
+    width: 100%;
+    cursor: pointer;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    object-fit: cover;
+    height: 200px;
+}
+
+.large-image:hover {
+    transform: scale(1.03);
+    border-color: #007BFF;
+}
+
+
+
+
+.gallery-title {
+    font-size: 2.5rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.gallery-title::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 3px;
+    background-color: #007BFF;
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+
+
+
+
+/* Services Section Styles */
+body {
+    background-color: #000; /* Sleek black background */
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.services {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.services h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #ffd700; /* Gold color for added catchiness */
+}
+
+.service {
+    display: inline-block;
+    width: 30%;
+    margin: 15px 1%;
+    background-color: #333; /* Dark grey box for contrast */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5); /* Gold glow for a catchy effect */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.8);
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.service h2 {
+    font-size: 1.8em;
+    margin: 20px 0;
+    color: #ffd700;
+}
+
+.service p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #ccc; /* Subtle contrast for text */
+}
+
+/*Contact Section */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.contact-form, .contact-details {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #111;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 16px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #222;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid #5db1ff;
+    background-color: #1a1a1a;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    margin-top: 25px;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: #5db1ff;
+    border: none;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #3a91e0;
+}
+
+.contact-details p {
+    font-size: 1.1rem;
+    margin: 15px 0;
+}
+
+.contact-details a {
+    color: #5db1ff;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
